@@ -92,34 +92,34 @@ class MessageFeed extends React.Component {
           <div className="MessageHeaderBox">
             <div className="MessageFeedHeaderText">Message Feed</div>
           </div>
-          <div className="FeedBody">
-            <div className="MiniProfileBox-PostButtonBox">
-              <div className="MiniProfileBox">
-                <MiniProfile user={this.state.currentUser} />
-                <div className="PostButtonBox">
-                  <OverlayTrigger
-                    trigger="click"
-                    placement="bottom"
-                    overlay={this.popover}
-                    rootClose={true}
-                  >
-                    <Button
-                      className="PostButton"
-                      variant="outline_dark"
-                      size="lg"
-                      title="Post A Message"
-                    ></Button>
-                  </OverlayTrigger>
-                </div>
+        </div>
+        <div className="FeedBody">
+          <div className="MiniProfileBox-PostButtonBox">
+            <div className="MiniProfileBox">
+              <MiniProfile user={this.state.currentUser} />
+              <div className="PostButtonBox">
+                <OverlayTrigger
+                  trigger="click"
+                  placement="bottom"
+                  overlay={this.popover}
+                  rootClose={true}
+                >
+                  <Button
+                    className="PostButton"
+                    variant="outline_dark"
+                    size="lg"
+                    title="Post A Message"
+                  ></Button>
+                </OverlayTrigger>
               </div>
             </div>
-            <div className="PostFeedBody">
-              <ul>
-                {this.state.messages.map((messageObject) => {
-                  return <Message {...messageObject} />;
-                })}
-              </ul>
-            </div>
+          </div>
+          <div className="PostFeedBody">
+            <ul>
+              {this.state.messages.map((messageObject) => {
+                return <Message {...messageObject} />;
+              })}
+            </ul>
           </div>
         </div>
       </div>

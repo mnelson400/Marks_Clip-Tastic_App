@@ -3,7 +3,7 @@
 }
 
 .MessageBody {
-  width: 613px;
+  width: 606px;
   background-image: url(../../assets/images/Clear_Red.png);
   border: #d2be1a;
   border-radius: 5px;
@@ -20,9 +20,10 @@
 }
 
 .MessageCardBody {
-  width: 613px;
+  width: 606px;
   position: relative;
   margin: auto;
+  height: 218px;
 }
 
 .MessageCard {

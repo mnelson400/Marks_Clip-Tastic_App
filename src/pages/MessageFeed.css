@@ -65,6 +65,7 @@
   margin: auto;
   margin: 10px;
   width: 825px;
+  overflow: hidden;
 }
 
 .PostFeedBody {
@@ -74,15 +75,16 @@
   margin: auto;
   font: italic small-caps bold 27px/45px Impact;
   -webkit-text-stroke: 0.25px white;
+  float: left;
 }
 
 .MiniProfileBox-PostButtonBox {
   width: 200px;
   height: 360px;
-  left: 883px;
   top: 125px;
   position: sticky;
   z-index: 1;
+  float: right;
 }
 
 .MiniProfileBox {
